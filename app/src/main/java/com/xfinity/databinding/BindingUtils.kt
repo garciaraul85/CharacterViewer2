@@ -10,9 +10,9 @@ fun <T> setRecyclerViewProperties(recyclerView: RecyclerView, items: List<T>) {
     }
 }
 
-@BindingAdapter("changedPositions")
+/*@BindingAdapter("changedPositions")
 fun <T> setDataChanged(recyclerView: RecyclerView, positions: Set<Int>) {
     if (recyclerView.adapter is BindableAdapter<*>) {
         (recyclerView.adapter as BindableAdapter<T>).changedPositions(positions)
     }
-}
+}*/

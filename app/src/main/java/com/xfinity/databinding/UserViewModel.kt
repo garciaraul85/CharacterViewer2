@@ -18,12 +18,12 @@ class UserViewModel : BaseObservable() {
             notifyPropertyChanged(BR.userIds)
         }
 
-    @get:Bindable
+    /*@get:Bindable
     var changedPositions: Set<Int> = mutableSetOf()
         private set(value) {
             field = value
             notifyPropertyChanged(BR.changedPositions)
-        }
+        }*/
 
     /*private val updateInterval = 1000L
     private val updateHandler = Handler()

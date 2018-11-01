@@ -19,9 +19,9 @@ class UserAdapter(val context: Context, val onClick: UserAdapter.OnItemClicked) 
         notifyDataSetChanged()
     }
 
-    override fun changedPositions(positions: Set<Int>) {
+    /*override fun changedPositions(positions: Set<Int>) {
         positions.forEach(this::notifyItemChanged)
-    }
+    }*/
 
     var userIds = emptyList<RelatedTopic>()
 
