@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+android:foreground="?android:attr/selectableItemBackground"
+tools:layout_gravity="center">
+
+<ImageView
+    android:id="@+id/imageview_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:src="@drawable/android3" />
+
+<TextView
+    android:id="@+id/userText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:textColor="@android:color/white"
+    android:gravity="center"
+    android:background="#B000"
+    android:padding="16dp"
+    tools:text="Hero text" />
+</FrameLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">The Simpsons Viewer</string>
+    <string name="api_url">https://api.duckduckgo.com</string>
+    <string name="search_query">simpsons characters</string>
+</resources>
