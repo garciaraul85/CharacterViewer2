@@ -13,4 +13,16 @@ class UserViewModel : BaseObservable() {
             field = value
             notifyPropertyChanged(BR.userIds)
         }
+
+
+    fun startUpdates(list: List<RelatedTopic>) {
+        userIds.addAll(list)
+        notifyPropertyChanged(BR.userIds)
+    }
+
+    fun initList() {
+        userIds = arrayListOf()
+
+    }
+
 }

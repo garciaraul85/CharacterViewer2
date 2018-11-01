@@ -49,11 +49,13 @@ class Main2Activity : AppCompatActivity(), UserAdapter.OnItemClicked {
         val adapter = UserAdapter(this.applicationContext, this)
         recyclerView.adapter = adapter
 
+        viewModel.initList()
         binding.viewModel = viewModel
 
         characterViewModel.responseLiveData.observe(this, Observer<List<RelatedTopic>> {
             if (it != null) {
-                adapter.setData(it)
+                viewModel.startUpdates(it)
+                //adapter.setData(it)
             }
         })
 
