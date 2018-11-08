@@ -15,4 +15,8 @@ class Icon {
     @Expose
     var width: String? = null
 
+    fun create(url: String?) {
+        this.url = url
+    }
+
 }

@@ -34,7 +34,6 @@ public class CharacterViewModel extends ViewModel {
                 dataManager.getCharacters(query)
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
-                        .map(Character::getRelatedTopics)
                         .subscribe(responseLiveData::setValue)
         );
     }

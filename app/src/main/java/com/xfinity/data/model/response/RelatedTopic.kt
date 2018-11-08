@@ -18,4 +18,11 @@ class RelatedTopic {
     @Expose
     var icon: Icon? = null
 
+    fun create(text: String?, url: String?) {
+        this.text = text
+
+        this.icon = Icon()
+        this.icon!!.create(url)
+    }
+
 }
